@@ -1,9 +1,5 @@
-
-# Add script that just blocks Edge and not all the stuff.
-# Add script that sets Downloads location to "C:\Downloads"
-
-# Special thanks to Disassembler0 and to alirobe
-#   for original script and letting me know about it :-P
+# Special thanks to Disassembler0 for original script 
+#    and to alirobe for that version, too. :-P
 #   Finding this stuff out on one's own is torture. Like, really GJ.
 
 # Disable Wi-Fi Sense
@@ -251,10 +247,10 @@ Set-ItemProperty -Path "HKLM:\SOFTWARE\Microsoft\Windows\CurrentVersion\Policies
 
 # Disable display and sleep mode timeouts
 Write-Output "Disabling display and sleep mode timeouts..."
-powercfg /X monitor-timeout-ac 0
-powercfg /X monitor-timeout-dc 0
+powercfg /X monitor-timeout-ac 5
+powercfg /X monitor-timeout-dc 5
 powercfg /X standby-timeout-ac 0
-powercfg /X standby-timeout-dc 0
+powercfg /X standby-timeout-dc 15
 
 # Hide network options from Lock Screen
 #Write-Output "Hiding network options from Lock Screen..."
@@ -1087,7 +1083,7 @@ Set-ItemProperty -Path "HKLM:\SOFTWARE\Microsoft\Windows\CurrentVersion\Policies
 ############
 
 # Wait for key press
-Write-Output "`nPress any key to continue...abort with (CTRL+C) if you need to run VM script or server scripts."
+Write-Output "`nPress any key to restart...abort with (CTRL+C)."
 [Console]::ReadKey($true) | Out-Null
 
 # Restart computer

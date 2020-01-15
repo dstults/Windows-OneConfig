@@ -1,10 +1,12 @@
-
-# Add script that just blocks Edge and not all the stuff.
-# Add script that sets Downloads location to "C:\Downloads"
-
-# Special thanks to Disassembler0 and to alirobe
-#   for original script and letting me know about it :-P
+# Special thanks to Disassembler0 for original script 
+#    and to alirobe for that version, too. :-P
 #   Finding this stuff out on one's own is torture. Like, really GJ.
+
+# Work that still needs to be done:
+#   - More testing!
+#   - Add script that sets Downloads location to "C:\Downloads"
+#   - Pin the explorer window menu open
+#   - Add shortcut to desktop that goes straight to adapters (Control Panel\Network and Internet\Network Connections)
 
 # Disable Wi-Fi Sense
 Write-Output "Disabling Wi-Fi Sense..."
@@ -255,10 +257,10 @@ Set-ItemProperty -Path "HKLM:\SOFTWARE\Microsoft\Windows\CurrentVersion\Policies
 
 # Disable display and sleep mode timeouts
 Write-Output "Disabling display and sleep mode timeouts..."
-powercfg /X monitor-timeout-ac 0
-powercfg /X monitor-timeout-dc 0
+powercfg /X monitor-timeout-ac 5
+powercfg /X monitor-timeout-dc 5
 powercfg /X standby-timeout-ac 0
-powercfg /X standby-timeout-dc 0
+powercfg /X standby-timeout-dc 15
 
 # Hide network options from Lock Screen
 #Write-Output "Hiding network options from Lock Screen..."
@@ -936,7 +938,7 @@ Remove-ItemProperty -Path "HKCU:\Software\Microsoft\Windows\CurrentVersion\Explo
 ############
 
 # Wait for key press
-Write-Output "`nPress any key to continue...abort with (CTRL+C) if you need to run VM script or server scripts."
+Write-Output "`nPress any key to restart...abort with (CTRL+C)."
 [Console]::ReadKey($true) | Out-Null
 
 # Restart computer
