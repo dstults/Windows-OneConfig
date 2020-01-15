@@ -367,10 +367,8 @@ Set-ItemProperty -Path "HKLM:\SOFTWARE\Policies\Microsoft\Windows\Explorer" -Nam
 #Set-ItemProperty -Path "HKLM:\SOFTWARE\Microsoft\Windows\CurrentVersion\Policies\Explorer" -Name "NoStartMenuMFUprogramsList" -Type DWord -Value 1
 
 # Show 'Most used' apps list in the Start Menu - Applicable until 1703 (GPO broken since then)
-#Function ShowMostUsedApps {
-#	Write-Output "Showing 'Most used' apps list in the Start Menu..."
-#	Remove-ItemProperty -Path "HKLM:\SOFTWARE\Microsoft\Windows\CurrentVersion\Policies\Explorer" -Name "NoStartMenuMFUprogramsList" -ErrorAction SilentlyContinue
-#}
+#Write-Output "Showing 'Most used' apps list in the Start Menu..."
+#Remove-ItemProperty -Path "HKLM:\SOFTWARE\Microsoft\Windows\CurrentVersion\Policies\Explorer" -Name "NoStartMenuMFUprogramsList" -ErrorAction SilentlyContinue
 
 # Set Control Panel view to Small icons (Classic)
 Write-Output "Setting Control Panel view to small icons..."
@@ -754,7 +752,6 @@ Get-AppxPackage "WinZipComputing.WinZipUniversal" | Remove-AppxPackage
 Get-AppxPackage "XINGAG.XING" | Remove-AppxPackage
 
 # Uninstall Windows Store
-Function UninstallWindowsStore {
 Write-Output "Uninstalling Windows Store..."
 Get-AppxPackage "Microsoft.DesktopAppInstaller" | Remove-AppxPackage
 Get-AppxPackage "Microsoft.Services.Store.Engagement" | Remove-AppxPackage
