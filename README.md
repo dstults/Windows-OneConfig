@@ -7,6 +7,7 @@ Simply select the ps1 files most related to what you're doing and then execute i
 1) Open PowerShell as Administrator
 2) Browse to: https://github.com/DranKof/Windows-OneConfig  *or use thumbdrive with ps1 file
 3) Copy, paste, wait, skim results, done
+Opt 4) Fresh install of Windows 10? Run the Fresh Install script, too.
 
 # How to customize it?
 It's super easy! No functions, no questions, just comment-uncomment.
