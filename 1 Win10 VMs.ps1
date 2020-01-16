@@ -1094,11 +1094,4 @@ Set-ItemProperty -Path "HKLM:\SOFTWARE\Microsoft\Windows\CurrentVersion\Policies
 #Job's done#
 ############
 
-# Wait for key press
-Write-Output "`nPress any key to restart...abort with (CTRL+C)."
-[Console]::ReadKey($true) | Out-Null
-
-# Restart computer
-Write-Output "Restarting..."
-Restart-Computer
-
+Write-Output "`nThere were potentially a lot of registry changes and feature adjustments. You may want to restart."

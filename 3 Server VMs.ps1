@@ -216,10 +216,6 @@ Set-ItemProperty -Path "HKLM:\SOFTWARE\Wow6432Node\Microsoft\.NETFramework\v4.0.
 #Write-Output "Enabling Network Connectivity Status Indicator (NCSI) active test..."
 #Remove-ItemProperty -Path "HKLM:\SOFTWARE\Policies\Microsoft\Windows\NetworkConnectivityStatusIndicator" -Name "NoActiveProbe" -ErrorAction SilentlyContinue
 
-# Disable Remote Assistance - Not applicable to Server (unless Remote Assistance is explicitly installed)
-Write-Output "Disabling Remote Assistance..."
-Set-ItemProperty -Path "HKLM:\SYSTEM\CurrentControlSet\Control\Remote Assistance" -Name "fAllowToGetHelp" -Type DWord -Value 0
-
 # Enable Remote Desktop
 Write-Output "Enabling Remote Desktop..."
 Set-ItemProperty -Path "HKLM:\SYSTEM\CurrentControlSet\Control\Terminal Server" -Name "fDenyTSConnections" -Type DWord -Value 0
@@ -1094,11 +1090,4 @@ Set-ItemProperty -Path "HKLM:\SOFTWARE\Microsoft\Windows\CurrentVersion\Policies
 #Job's done#
 ############
 
-# Wait for key press
-Write-Output "`nPress any key to restart...abort with (CTRL+C)."
-[Console]::ReadKey($true) | Out-Null
-
-# Restart computer
-Write-Output "Restarting..."
-Restart-Computer
-
+Write-Output "`nThere were potentially a lot of registry changes and feature adjustments. You may want to restart."
