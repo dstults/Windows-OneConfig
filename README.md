@@ -36,6 +36,11 @@ As far as I know, both?
   ? Maybe add shortcut to desktop that goes straight to "Control Panel\Network and Internet\Network Connections" named "Adapters"
 
 # Special Thanks to:
-Disassembler0 for original script ( https://github.com/Disassembler0/Win10-Initial-Setup-Script/blob/master/Win10.psm1 )
-alirobe for Reclaim Windows 10 version, otherwise I would never have heard about it ( https://github.com/alirobe/Reclaim-Windows10/blob/master/Reclaim-Windows10/Reclaim-Windows10.psm1 )
-  Finding all this stuff out is torture. Really good job.
+
+Disassembler0 for original script and many, many updates:
+https://github.com/Disassembler0/Win10-Initial-Setup-Script/blob/master/Win10.psm1
+Finding all this stuff out is torture. Really good job.
+
+alirobe for Reclaim Windows 10 version, otherwise I would never have heard about it:
+https://github.com/alirobe/Reclaim-Windows10/blob/master/Reclaim-Windows10/Reclaim-Windows10.psm1
+Great second take on best practices.
