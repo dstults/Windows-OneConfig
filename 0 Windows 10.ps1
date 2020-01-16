@@ -2,15 +2,6 @@
 #    and to alirobe for that version, otherwise I would never have heard about it ( https://github.com/alirobe/Reclaim-Windows10/blob/master/Reclaim-Windows10/Reclaim-Windows10.psm1 )
 #   Finding this stuff out on one's own is torture. Like, really GJ.
 
-# Wishlist/To do:
-#   - Unpin Documents and Pictures from Quick Access (it should have Desktop/Downloads only)
-
-# Work that still needs to be done:
-#   - More testing!
-#   - Add script that sets Downloads location to "C:\Downloads"
-#   - Pin the explorer window menu open
-#   - Add shortcut to desktop that goes straight to "Control Panel\Network and Internet\Network Connections" named "Adapters"
-
 # Disable Wi-Fi Sense
 Write-Output "Disabling Wi-Fi Sense..."
 If (!(Test-Path "HKLM:\SOFTWARE\Microsoft\PolicyManager\default\WiFi\AllowWiFiHotSpotReporting")) {
