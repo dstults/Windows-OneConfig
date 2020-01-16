@@ -33,6 +33,9 @@ https://github.com/alirobe/Reclaim-Windows10
 # Windows Server 2016 or 2019?
 As far as I know, both?
 
+# Last major Windows 10 update?
+1909
+
 # Future plans?
   - Unpin Documents and Pictures from Quick Access (it should have Desktop/Downloads only)
   - Forever testing.
