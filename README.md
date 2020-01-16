@@ -18,11 +18,13 @@ Also, here is a link for more, probably much more frequently updated code:
 <br>(THE SOURCE) https://github.com/Disassembler0/Win10-Initial-Setup-Script/blob/master/Win10.psm1
 
 # Why is there a separate "Fresh Install" script?
-To unpin everything and uninstall OneDrive. You only want to do this at the very beginning.
+To unpin everything and uninstall OneDrive. You only want to do this at the very beginning. Also, the beginning is a good time to install .Net framework items.
 
 1) The script unpins everything in the start menu and taskbar. You don't want to do that on a machine that you're in the middle of using, but you do want to do it when you have 20 bloatware links in your fresh Windows 10 installation.
 
 2) You also want to uninstall OneDrive only once at the very beginning. If you use it, when you reinstall you can move the share folder where you actually want it. If you don't use OneDrive, then you just saved time uninstalling it.
+
+3) You also probably want to install .Net framework 2.x and 3.x while you're setting up a box because if you plan on running it offline, there aren't any good offline installers or reliable methods of installation. On the other hand, if you've been using a computer for some period of time and you've never needed these .Net framework entries, you probably won't need them.
 
 # Why not directly execute the ps1 (powershell) script?
 You'd either have to reduce computer security or it'd be too many mouse clicks.
