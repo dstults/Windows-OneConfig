@@ -1,4 +1,12 @@
 
+# Install .NET Framework 2.0, 3.0 and 3.5 runtimes - Requires internet connection
+Write-Output "Installing .NET Framework 2.0, 3.0 and 3.5 runtimes..."
+If ((Get-CimInstance -Class "Win32_OperatingSystem").ProductType -eq 1) {
+	Enable-WindowsOptionalFeature -Online -FeatureName "NetFx3" -NoRestart -WarningAction SilentlyContinue | Out-Null
+} Else {
+	Install-WindowsFeature -Name "NET-Framework-Core" -WarningAction SilentlyContinue | Out-Null
+}
+
 # Uninstall OneDrive - Not applicable to Server
 Write-Output "Uninstalling OneDrive..."
 Stop-Process -Name "OneDrive" -Force -ErrorAction SilentlyContinue

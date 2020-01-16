@@ -829,14 +829,6 @@ If ((Get-CimInstance -Class "Win32_OperatingSystem").ProductType -eq 1) {
 #Stop-Service "sshd" -WarningAction SilentlyContinue
 #Get-WindowsCapability -Online | Where-Object { $_.Name -like "OpenSSH.Server*" } | Remove-WindowsCapability -Online | Out-Null
 
-# Install .NET Framework 2.0, 3.0 and 3.5 runtimes - Requires internet connection
-Write-Output "Installing .NET Framework 2.0, 3.0 and 3.5 runtimes..."
-If ((Get-CimInstance -Class "Win32_OperatingSystem").ProductType -eq 1) {
-	Enable-WindowsOptionalFeature -Online -FeatureName "NetFx3" -NoRestart -WarningAction SilentlyContinue | Out-Null
-} Else {
-	Install-WindowsFeature -Name "NET-Framework-Core" -WarningAction SilentlyContinue | Out-Null
-}
-
 # Set Photo Viewer association for bmp, gif, jpg, png and tif
 Write-Output "Setting Photo Viewer association for bmp, gif, jpg, png and tif..."
 If (!(Test-Path "HKCR:")) {
