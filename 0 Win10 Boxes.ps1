@@ -1,3 +1,4 @@
+# Special thanks to Disassembler0 for original script ( https://github.com/Disassembler0/Win10-Initial-Setup-Script/blob/master/Win10.psm1 )
 #    and to alirobe for that version, otherwise I would never have heard about it ( https://github.com/alirobe/Reclaim-Windows10/blob/master/Reclaim-Windows10/Reclaim-Windows10.psm1 )
 #   Finding this stuff out on one's own is torture. Like, really GJ.
 
