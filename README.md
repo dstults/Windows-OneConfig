@@ -4,10 +4,9 @@
 Simply select the ps1 files most related to what you're doing and then execute it after initial Windows install completes.
 
 # How to run script: Easy Mode
-1) Open PowerShell as Administrator!
-2) ...Then open this page in web browser or open a copy of ps1 in notepad.
-3) Copy, Paste into Powershell.
-Yay!
+1) Open PowerShell as Administrator
+2) Browse to: https://github.com/DranKof/Windows-OneConfig  *or use thumbdrive with ps1 file
+3) Copy, paste, wait, skim results, done
 
 # How to customize it?
 It's super easy! No functions, no questions, just comment-uncomment.
@@ -21,22 +20,20 @@ To unpin everything and uninstall OneDrive. You only want to do this at the very
 
 2) You also want to uninstall OneDrive only once at the very beginning. If you use it, when you reinstall you can move the share folder where you actually want it. If you don't use OneDrive, then you just saved time uninstalling it.
 
-# Why not execute the ps1 (powrshell) script?
-You'd either have to reduce computer security and/or browse to the right folder or type commands and it just becomes a layered mess.
+# Why not directly execute the ps1 (powershell) script?
+You'd either have to reduce computer security and/or too many mouse clicks.
+
+If you're interested, there's a nice explanation of how to use a fully-featured txtfile customizable version here:
+https://github.com/alirobe/Reclaim-Windows10
 
 # Windows Server 2016 or 2019?
-As far as I know, both.
+As far as I know, both?
 
 # Future plans?
-
-Wishlist/To do:
   - Unpin Documents and Pictures from Quick Access (it should have Desktop/Downloads only)
-
-Work that still needs to be done:
   - Forever testing.
-  - Add script that sets Downloads location to "C:\Downloads"
-  - Pin the explorer window menu open
-  - Add shortcut to desktop that goes straight to "Control Panel\Network and Internet\Network Connections" named "Adapters"
+  ? Maybe set "Downloads" system folder location to "C:\Downloads"
+  ? Maybe add shortcut to desktop that goes straight to "Control Panel\Network and Internet\Network Connections" named "Adapters"
 
 # Special Thanks to:
 Disassembler0 for original script ( https://github.com/Disassembler0/Win10-Initial-Setup-Script/blob/master/Win10.psm1 )
