@@ -11,7 +11,7 @@ Simply select the ps1 files most related to what you're doing and then execute i
 # How to customize it?
 It's super easy! No functions, no questions, just comment-uncomment.
 Also, here is a link for more, probably much more frequently updated code:
-(THE SOURCE) https://github.com/Disassembler0/Win10-Initial-Setup-Script/blob/master/Win10.psm1
+<br>(THE SOURCE) https://github.com/Disassembler0/Win10-Initial-Setup-Script/blob/master/Win10.psm1
 
 # Why is there a separate "Fresh Install" script?
 To unpin everything and uninstall OneDrive. You only want to do this at the very beginning.
@@ -38,9 +38,9 @@ As far as I know, both?
 # Special Thanks to:
 
 Disassembler0 for original script and many, many updates:
-https://github.com/Disassembler0/Win10-Initial-Setup-Script/blob/master/Win10.psm1
-Finding all this stuff out is torture. Really good job.
+<br>https://github.com/Disassembler0/Win10-Initial-Setup-Script/blob/master/Win10.psm1
+ - Finding all this stuff out is torture. Really good job.
 
 alirobe for Reclaim Windows 10 version, otherwise I would never have heard about it:
-https://github.com/alirobe/Reclaim-Windows10/blob/master/Reclaim-Windows10/Reclaim-Windows10.psm1
-Great second take on best practices.
+<br>https://github.com/alirobe/Reclaim-Windows10/blob/master/Reclaim-Windows10/Reclaim-Windows10.psm1
+ - Great second take on best practices.
