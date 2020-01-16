@@ -39,10 +39,7 @@ https://github.com/alirobe/Reclaim-Windows10
 It should work on both.
 
 # Future plans/Wishlist?
-  - Unpin Documents and Pictures from Quick Access (it should have Desktop/Downloads only)
-  - More testing.
-  ? Maybe set "Downloads" system folder location to "C:\Downloads"
-  ? Maybe add shortcut to desktop that goes straight to "Control Panel\Network and Internet\Network Connections" named "Connections" or "Adapters"
+  - See Issues ( https://github.com/DranKof/Windows-OneConfig/issues )
 
 # Special Thanks to:
 
