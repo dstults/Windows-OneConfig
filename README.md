@@ -30,17 +30,17 @@ You'd either have to reduce computer security and/or too many mouse clicks.
 If you're interested, there's a nice explanation of how to use a fully-featured txtfile customizable version here:
 https://github.com/alirobe/Reclaim-Windows10
 
-# Windows Server 2016 or 2019?
-As far as I know, both?
-
-# Last major Windows 10 update?
+# Last tested major Windows 10 release?
 1909
 
-# Future plans?
+# Windows Server 2016 or 2019?
+It should work on both.
+
+# Future plans/Wishlist?
   - Unpin Documents and Pictures from Quick Access (it should have Desktop/Downloads only)
-  - Forever testing.
+  - More testing.
   ? Maybe set "Downloads" system folder location to "C:\Downloads"
-  ? Maybe add shortcut to desktop that goes straight to "Control Panel\Network and Internet\Network Connections" named "Adapters"
+  ? Maybe add shortcut to desktop that goes straight to "Control Panel\Network and Internet\Network Connections" named "Connections" or "Adapters"
 
 # Special Thanks to:
 
