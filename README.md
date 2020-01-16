@@ -25,9 +25,9 @@ To unpin everything and uninstall OneDrive. You only want to do this at the very
 2) You also want to uninstall OneDrive only once at the very beginning. If you use it, when you reinstall you can move the share folder where you actually want it. If you don't use OneDrive, then you just saved time uninstalling it.
 
 # Why not directly execute the ps1 (powershell) script?
-You'd either have to reduce computer security and/or too many mouse clicks.
+You'd either have to reduce computer security or it'd be too many mouse clicks.
 
-If you're interested, there's a nice explanation of how to use a fully-featured txtfile customizable version here:
+If you really wanted to go into ps1 execution with customizable scripts, read through how this one works:
 https://github.com/alirobe/Reclaim-Windows10
 
 # Last tested major Windows 10 release?
