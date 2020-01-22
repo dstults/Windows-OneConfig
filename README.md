@@ -5,8 +5,9 @@ Simply select the ps1 files most related to what you're doing and then execute i
 
 # How to run script: Easy Mode
 1) Open PowerShell as Administrator
-2) Browse to: https://github.com/DranKof/Windows-OneConfig  *or use thumbdrive with ps1 file
-3) Copy, paste, wait, skim results, done
+2) Browse to: https://github.com/DranKof/Windows-OneConfig and open the config of your choice  *or use thumbdrive with ps1 file
+3) Copy the entire script and paste it into your shell window
+After a short wait, it should be done.
 
 Optionally, if it's a fresh install of Windows 10:
 
