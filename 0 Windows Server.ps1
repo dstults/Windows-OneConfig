@@ -217,9 +217,9 @@ Set-ItemProperty -Path "HKLM:\SOFTWARE\Wow6432Node\Microsoft\.NETFramework\v4.0.
 #Remove-ItemProperty -Path "HKLM:\SOFTWARE\Policies\Microsoft\Windows\NetworkConnectivityStatusIndicator" -Name "NoActiveProbe" -ErrorAction SilentlyContinue
 
 # Enable Remote Desktop
-Write-Output "Enabling Remote Desktop..."
-Set-ItemProperty -Path "HKLM:\SYSTEM\CurrentControlSet\Control\Terminal Server" -Name "fDenyTSConnections" -Type DWord -Value 0
-Enable-NetFirewallRule -Name "RemoteDesktop*"
+#Write-Output "Enabling Remote Desktop..."
+#Set-ItemProperty -Path "HKLM:\SYSTEM\CurrentControlSet\Control\Terminal Server" -Name "fDenyTSConnections" -Type DWord -Value 0
+#Enable-NetFirewallRule -Name "RemoteDesktop*"
 
 # Disable Remote Desktop
 #Write-Output "Disabling Remote Desktop..."

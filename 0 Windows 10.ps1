@@ -221,9 +221,9 @@ Write-Output "Disabling Remote Assistance..."
 Set-ItemProperty -Path "HKLM:\SYSTEM\CurrentControlSet\Control\Remote Assistance" -Name "fAllowToGetHelp" -Type DWord -Value 0
 
 # Enable Remote Desktop
-Write-Output "Enabling Remote Desktop..."
-Set-ItemProperty -Path "HKLM:\SYSTEM\CurrentControlSet\Control\Terminal Server" -Name "fDenyTSConnections" -Type DWord -Value 0
-Enable-NetFirewallRule -Name "RemoteDesktop*"
+#Write-Output "Enabling Remote Desktop..."
+#Set-ItemProperty -Path "HKLM:\SYSTEM\CurrentControlSet\Control\Terminal Server" -Name "fDenyTSConnections" -Type DWord -Value 0
+#Enable-NetFirewallRule -Name "RemoteDesktop*"
 
 # Disable Remote Desktop
 #Write-Output "Disabling Remote Desktop..."

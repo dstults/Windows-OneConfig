@@ -7,6 +7,11 @@ If ((Get-CimInstance -Class "Win32_OperatingSystem").ProductType -eq 1) {
 	Install-WindowsFeature -Name "NET-Framework-Core" -WarningAction SilentlyContinue | Out-Null
 }
 
+# Enable Remote Desktop
+Write-Output "Enabling Remote Desktop..."
+Set-ItemProperty -Path "HKLM:\SYSTEM\CurrentControlSet\Control\Terminal Server" -Name "fDenyTSConnections" -Type DWord -Value 0
+Enable-NetFirewallRule -Name "RemoteDesktop*"
+
 # Uninstall OneDrive - Not applicable to Server
 Write-Output "Uninstalling OneDrive..."
 Stop-Process -Name "OneDrive" -Force -ErrorAction SilentlyContinue
