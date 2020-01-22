@@ -605,13 +605,6 @@ Set-ItemProperty -Path "HKCU:\Software\Microsoft\Windows\CurrentVersion\Explorer
 Write-Output "Disabling creation of Thumbs.db on network folders..."
 Set-ItemProperty -Path "HKCU:\Software\Microsoft\Windows\CurrentVersion\Explorer\Advanced" -Name "DisableThumbsDBOnNetworkFolders" -Type DWord -Value 1
 
-# Disable OneDrive
-Write-Output "Disabling OneDrive..."
-If (!(Test-Path "HKLM:\SOFTWARE\Policies\Microsoft\Windows\OneDrive")) {
-	New-Item -Path "HKLM:\SOFTWARE\Policies\Microsoft\Windows\OneDrive" | Out-Null
-}
-Set-ItemProperty -Path "HKLM:\SOFTWARE\Policies\Microsoft\Windows\OneDrive" -Name "DisableFileSyncNGSC" -Type DWord -Value 1
-
 # Uninstall default Microsoft applications
 Write-Output "Uninstalling default Microsoft applications..."
 Get-AppxPackage "Microsoft.3DBuilder" | Remove-AppxPackage
